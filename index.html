@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 24</title>
+</head>
+
+<body>
+   <header>
+      <h1>Home work Lesson 24</h1>
+   </header>
+   <main>
+      <div class="page">
+         <div class="page__container">
+            <div class="block">
+               <div>
+                  <h2 class="title">Функції в JAVASCRIPT. Стрілочні функції, рекурсія, планування: setTimeout и
+                     setInterval.</h2>
+               </div>
+               <div class="block__body">
+                  <div class="block__img">
+                     <div>
+                        <img src="img/Screenshot_1.png" alt="Скріншот">
+                     </div>
+                     <div>
+                        <img src="img/Screenshot_2.png" alt="Скріншот">
+                     </div>
+                  </div>
+                  <div class="block__menu">
+                     <ul class="menu">
+                        <li>Задача №1) Коля першим попаде в консоль, потім Вася</li>
+                        <li>Задача №2) правильно</li>
+                        <li>Задача №3) неправильно, якщо функціональний вираз то викликати його можна після його
+                           сворення.</li>
+                        <li>Задача №4) let showMessage;<br>
+
+                           if (2 > 1) { <br>
+                           showMessage = function () {<br>
+                           console.log('Повідомлення');<br>
+                           }<br>
+                           }<br>
+                           showMessage();<br>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="block block2">
+               <div>
+                  <h2 class="title">Масиви в JAVASCRIPT. Методи масивів. Редагування, пошук, сортування.</h2>
+               </div>
+               <div class="block__body">
+                  <div class="block__img">
+                     <div>
+                        <img src="img/Screenshot_3.png" alt="Скріншот">
+                     </div>
+                     <div>
+                        <img src="img/Screenshot_4.png" alt="Скріншот">
+                     </div>
+                  </div>
+                  <div class="block__menu">
+                     <ul class="menu">
+                        <li>Задача №1) 4</li>
+                        <li>Задача №2) let users = ["Ваня", "Иштван",]; <br>
+                           users.push('Оля'); <br>
+                           console.log(users); <br>
+                           users[1] = "Петя"; <br>
+                           console.log(users); <br>
+                           let removed = users.splice(0, 1); <br>
+                           console.log(removed); <br>
+                           users.unshift("Маша", "Паша"); <br>
+                           console.log(users);</li> <br>
+                        <li>Задача №3) let arr = ['Ваня', 'Иштван', 'Оля',];<br>
+                           let removed = arr.splice(1, 1);<br>
+                           console.log(removed);</li><br>
+                        <li>Задача №4) let strict = 'Ваня,Иштван,Оля';<br>
+                           let arr = strict.split(',');<br>
+                           console.log(arr);</li>
+                        <li>Задача №5) Викликало помилку через невизначену змінну arrTwo. Якщо б там написати arr, то
+                           викличе 9 і Undefinded
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="block block3">
+               <div>
+                  <h2 class="title">JavaScript Document object model (DOM).</h2>
+               </div>
+               <div class="block__body">
+                  <div class="block__img">
+                     <div>
+                        <img src="img/Screenshot_5.png" alt="Скріншот">
+                     </div>
+                     <div>
+                        <img src="img/Screenshot_6.png" alt="Скріншот">
+                     </div>
+                  </div>
+                  <div class="block__menu">
+                     <ul class="menu">
+                        <li>Задача №1
+                           <div data-say-hi="yes">Привіт!</div>
+                           const dataElementOne = document.querySelector('[data-say-hi]'); <br>
+                           const dataAttribute = dataElementOne.getAttribute('data-say-hi');<br>
+                           console.log(dataAttribute);
+                        </li>
+                        <li>Задача №2
+                           <br>
+                           <br>
+                           <ul class="list">
+                              <li>Корчи</li>
+                              <li>Йончи</li>
+                           </ul>
+                           <br>
+                           const elemsText = document.querySelectorAll('.list>li'); <br>
+                           console.log(elemsText[1]);
+                        </li>
+                        <li>Задача №3
+                           const getCollection = document.getElementsByClassName('like');<br>
+                           console.log(getCollection);
+                           <div class="like"></div>
+                           <div class="subscribe"></div>
+                           <div class="like subscribe"></div>
+                        </li>
+                        <li>Задача №4
+                           Викликало помилку, якщо написати document.querySelector('ul'), то добавиться всередину
+                           тега ul в самий кінець.
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="block">
+               <div>
+                  <h2 class="title">JavaScript розміри прокрутка і координати елементів на сторінці і вікна браузера.
+                  </h2>
+               </div>
+               <div class="block__body">
+                  <div class="block__img">
+                     <div>
+                        <img src="img/Screenshot_7.png" alt="Скріншот">
+                     </div>
+                  </div>
+                  <div class="block__menu">
+                     <ul class="menu">
+                        <li>
+                           <div>
+                              <img src="img/Screenshot_8.png" alt="Скріншот">
+                           </div>
+                        </li>
+                        <li>
+                           <div>
+                              <img src="img/Screenshot_9.png" alt="Скріншот">
+                           </div>
+                        </li>
+                        <li>
+                           <div>
+                              <img src="img/Screenshot_10.png" alt="Скріншот">
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+   <footer>
+
+   </footer>
+   <script src="js/script.js"></script>
+</body>
+
+</html>

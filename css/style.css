@@ -1,0 +1,54 @@
+body{
+   background-color: rgb(191, 204, 185);
+}
+h1 {
+   font-size: 50px;
+   text-align: center;
+   padding: 20px 0;
+}
+
+h2 {
+   font-size: 40px;
+   text-align: center;
+   padding: 20px 0;
+}
+
+.page {}
+
+.page__container {
+   max-width: 1200px;
+   padding-left: 15px;
+   padding-right: 15px;
+   margin: 0 auto;
+}
+
+.block:not(:last-child) {
+   margin-bottom: 30px;
+}
+
+.block__body {
+   display: flex;
+   padding: 30px 0;
+}
+
+.title {}
+
+.block__img {
+   flex: 0 0 50%;
+}
+
+.block__img div img {
+   max-width: 100%;
+}
+
+.block__menu {
+   padding-left: 40px;
+}
+
+.menu {
+   font-size: 25px;
+}
+
+.menu li:not(:last-child) {
+   margin-bottom: 40px;
+}
